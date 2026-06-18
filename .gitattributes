@@ -1,0 +1,22 @@
+# Auto-detect text files and normalize line endings to LF in the repo
+* text=auto
+
+# Source files that Visual Studio expects with CRLF on Windows checkout
+*.cs      text eol=crlf
+*.csproj  text eol=crlf
+*.sln     text eol=crlf
+*.config  text eol=crlf
+*.resx    text eol=crlf
+*.xml     text eol=crlf
+*.json    text eol=crlf
+
+# Always treat these as text, regardless of platform
+*.md      text
+*.sql     text
+
+# Treat binary assets as binary (no line-ending conversion, no diffing as text)
+*.png     binary
+*.jpg     binary
+*.ico     binary
+*.dll     binary
+*.pdb     binary
